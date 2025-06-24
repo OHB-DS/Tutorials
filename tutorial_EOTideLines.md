@@ -8,7 +8,7 @@
 <a href="https://www.ohb-ds.de/en/geospatial-solutions/earth-observation-solutions" target="_blank"><img src="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/OHB_DS_logo_white.png" alt="Image" width="150"/></a>&nbsp;&nbsp;in collaboration with&nbsp;&nbsp;<img src="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/ESA_logo_2020_Deep.png" alt="Image" width="100"/>
 <br><br>
 
-[**EOTideLines**](https://eotideline.lab.dive.edito.eu/) is an Earth Observation product that monitoring the state of the tidal bathymetry. It displays the latest position of low tide line derived from Landsat and Sentinel-2 optical images coupled with a tidal model. This contour delineates the low-tide bathymetry and can be used to:
+[**EOTideLines**](https://eotideline.lab.dive.edito.eu/) is an Earth Observation product for monitoring the state of the tidal bathymetry. It displays the latest position of low tide line derived from Landsat and Sentinel-2 optical images coupled with a tidal model. This contour delineates the low-tide bathymetry and can be used to:
 - Provide near-real time information of the state of the intertidal bathymetry.
 - Highlight the presence of transient features like sand banks, shoals and channels.
 - Identify potential obstacles that can impair navigability in harbour entrances and delay operations.
