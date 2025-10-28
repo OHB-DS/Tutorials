@@ -8,7 +8,7 @@
 <a href="https://www.ohb-ds.de/en/geospatial-solutions/earth-observation-solutions" target="_blank"><img src="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/OHB_DS_logo_white.png" alt="Image" width="150"/></a>&nbsp;&nbsp;in collaboration with&nbsp;&nbsp;<img src="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/ESA_logo_2020_Deep.png" alt="Image" width="100"/>
 <br><br>
 
-[**EOTideLines**](https://eotideline.lab.dive.edito.eu/) is an Earth Observation product for monitoring the state of the tidal bathymetry. It displays the latest position of low tide line derived from Landsat and Sentinel-2 optical images coupled with a tidal model. This contour delineates the low-tide bathymetry and can be used to:
+[**EOTideLines**](https://eotideline.lab.dive.edito.eu/) is an Earth Observation product for monitoring the state of the tidal bathymetry. It displays the latest position of low water line derived from Landsat and Sentinel-2 optical images coupled with a tidal model. This contour delineates the low-tide bathymetry and can be used to:
 - Provide near-real time information of the state of the intertidal bathymetry.
 - Highlight the presence of transient features like sand banks, shoals and channels.
 - Identify potential obstacles that can impair navigability in harbour entrances and delay operations.
@@ -17,13 +17,17 @@
 
 A short video on how to use the webapp is available [here](https://www.youtube.com/watch?v=h_SVAUlRhDY&ab_channel=OHBDigitalServices).
 
+<img src="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/EOTideLines_app_16x9.png" alt="tides"
+    style="width: 100%; height: auto; object-fit: contain;" />
+
 > This product was funded by the European Space Agency (ESA) under the EO for the Port of the Future (EO4PORTS) initiative: ESA AO/1-11850/23/I-DT.
 
 > Contact [Dr. Kilian Vos](mailto:kilian.vos@ohb-ds.de) for more information or requests on [**EOTideLines**](https://eotideline.lab.dive.edito.eu/).
 
 ### 🛰️ How does it work?
-- An image processing algorithm analyses publicly available imagery (Landsat and Sentinel2) and links the images with a tidal model to map the low-tide line. 
-- The low-tide lines can be visualized in the portal for various areas (currently North Sea coast of Germany, NL and Belgium) and time periods (currently 2020-date). 
+- An image processing algorithm analyses publicly available imagery (Landsat and Sentinel2) and links the images with a tidal model to map the low water line. 
+- The low water lines can be visualised in the portal for various areas (currently North Sea coast of Germany, NL and Belgium) and time periods (currently 2020-date).
+- The latest low tide image can also be visualised as a multi-spectral water index or nautical chart mode.
 - Users can download the data as spatial layers (GeoJSON files) to integrate in a GIS environment. 
 
 ### 💡 Benefits 
@@ -53,7 +57,7 @@ The satellite images captured at low tide (bottom 30% of the springs tidal range
 The 70th percentile is taken when calculating the composite to give more weight to dry pixels. 
 <br><br>
 <li><strong>Extract the sand/water contours</strong></li>
-Use the NDWI contrast between water and wet sand to extract the low-tide line from the composite as a vector line.
+Use the NDWI contrast between water and wet sand to extract the low waer line from the composite as a vector line.
 <a href="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/2024_Wadden_Sea_32UME_048_lowtideline_v5.jpg" target="_blank">
 <img src="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/2024_Wadden_Sea_32UME_048_lowtideline_v5.jpg" alt="tides"
 style="width: 75%; height: auto; object-fit: contain;" />
@@ -87,3 +91,9 @@ By going back in time with the satellite archive, we can also observe how this c
 While the satellite observations do not provide a solution to the management of the Holwerd-Ameland ferry line, the low tide lines provide important data on the dynamics of the coastal system that can be used by environmental planners and maritime operators to inform their strategies. If the navigation channel is continuously migrating West, can it be an option to create a new route East of the sand shoal?
 
 **This application demonstrates the value of including satellite observations in a coastal Digital Twin to better understand how changes in bathymetry can affect navigability.**
+
+Application in "nautical mode"
+
+<img src="https://minio.dive.edito.eu/oidc-kvos/eotideline/assets/EOTideLines_app_nautical_16x9.png" alt="tides"
+    style="width: 100%; height: auto; object-fit: contain;" />
+
